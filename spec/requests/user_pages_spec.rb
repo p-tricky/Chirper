@@ -87,7 +87,7 @@ describe "User pages" do
 
         describe "toggling the button" do
           before { click_button "Follow" } 
-          it { should have_xpath("//input@value='Unfollow']") }
+          it { should have_xpath("//input[@value='Unfollow']") }
         end
       end
 
@@ -98,7 +98,7 @@ describe "User pages" do
         end
 
         it "should decrement the followed user count" do
-          exect do
+          expect do
             click_button "Unfollow"
           end.to change(user.followed_users, :count).by(-1)
         end
@@ -111,7 +111,7 @@ describe "User pages" do
 
         describe "toggling the button" do
           before { click_button "Unfollow" }
-          it { should have_xpath("//input@value='Follow']") }
+          it { should have_xpath("//input[@value='Follow']") }
         end
       end
     end

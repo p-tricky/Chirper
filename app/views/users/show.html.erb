@@ -9,15 +9,7 @@
     </section>
     <section>
       <%= render 'shared/stats' %>
-      <% if @users.any? %>
-        <div class="user_avatars">
-          <% @users.each do |user| %>
-            <%= link_to gravatar_for(user, size: 30), user %>
-          <% end %>
-        </div>
     </section>
-  <% end %>
-  </aside>
   <div class="span8">
     <%= render 'follow_forms' if signed_in? %>
     <% if @user.microposts.any? %>

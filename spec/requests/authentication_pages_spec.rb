@@ -84,7 +84,7 @@ describe "Authentication" do
         end
 
         describe "submitting to the destroy action" do
-          before { delete relationship_path }
+          before { delete relationship_path(1) }
           specify { expect(response).to redirect_to(signin_path) }
         end
       end
