@@ -1,5 +1,5 @@
-# Ruby on Rails Tutorial: sample application
+# Ruby on Rails Tutorial: chirperlication
 
-This is the sample application for
+This is the chirperlication for
 the [*Ruby on Rails Tutorial*](http://railstutorial.org/)
 by [Michael Hartl](http://michaelhartl.com/).
