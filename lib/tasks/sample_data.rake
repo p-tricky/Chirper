@@ -13,7 +13,7 @@ def make_users
                  password_confirmation: "bigdick",
                  admin: true)
     User.create!(name: "Zach Dodds",
-                 email: "dodds@harveymudd.edu",
+                 email: "dodds@harvey.mudd.edu",
                  password: "ilovespam",
                  password_confirmation: "ilovespam")
     98.times do |n|

@@ -64,6 +64,17 @@ p {
 
 /* header */
 
+.navbar-inverse .navbar-inner {
+  background-image: linear-gradient(to bottom, blue, blue);
+  filter: none;
+}
+
+
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
 #logo {
   float: left;
   margin-right: 10px;
@@ -77,33 +88,7 @@ p {
   &:hover {
   color: #fff;
   text-decoration: none;
-  }
-}
-
-/* footer */
-
-footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #999;
-  a {
-  color: #555;
-    &:hover {
-    color: #222;
-    }
-  }
-  small {
-    float: left;
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 10px;
-    }
-  }
+  } 
 }
 
 /* miscellaneous */
